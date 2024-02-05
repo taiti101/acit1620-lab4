@@ -1,0 +1,99 @@
+:root{
+    --base-color: 240, 60%;
+
+}
+
+body {
+    
+    margin: 0;
+}
+
+header {
+    background-color: hsl(var(--base-color), 30%);
+    color: hsl(var(--base-color), 100%);
+    padding: 80px;
+    font-size: 24px;
+    text-align: center;
+}
+
+h1 {
+    color: hsl(var(--base-color), 70%);
+}
+
+h2 {
+    color: hsl(var(--base-color), 70%);
+}
+
+nav {
+    display: flex;
+    background-color: hsl(var(--base-color), 100%);
+    
+    margin-top: 0px;
+}
+nav a {
+    
+    text-decoration: none;
+    transform: scale(1);
+    margin: 0 10px;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px hsl(var(--base-color), 0%);
+}
+nav a:hover {
+    transform: scale(2.2) translateY(-5px);
+    background-color: hsl(var(--base-color), 70%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 16px 20px hsl(var(--base-color), 0%);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+li {
+    padding: 0px;
+    margin: 0px;
+    
+}
+a {
+    text-decoration: none;
+    gap: 0px;
+}
+
+.section {
+    padding: 20px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    
+}
+
+.section:hover {
+    background-color: hsl(var(--base-color), 45%); 
+    color: hsl(var(--base-color), 100%); 
+    padding: 30px;
+}
+
+.section:hover h1, 
+.section:hover h2 { 
+    color: hsl(var(--base-color), 100%);
+}
+
+footer {
+    margin-top: auto;
+    background-color: hsl(var(--base-color), 100%);
+    color: hsl(var(--base-color), 30%);
+    
+    text-align: center;
+    padding: 5px;
+    border-top: 2px solid black; 
+    
+}
+
+.wrapper { 
+    min-height: 90vh; 
+    display: flex; 
+    flex-direction: column;
+}
+
